@@ -51,69 +51,110 @@ header{
     padding-top: 99px;
     padding-left: 44px;
     padding-right: 11px;
-  }
+}
   
-  .sidebar h6{
+.sidebar h6{
       margin: 0 0 11px;
       color: #828da8;
       font-size: 12px;
       font-weight: 700;
-  }
-  .sidebar a {
+}
+.sidebar a {
     text-decoration: none;
     font-size: 15px;
     color: #000;
     display: block;
     padding: 5.5px 0;
-  }
+}
 
-  .main{
+.main{
       padding: 99px 0px 0px;
       width: 86.5%;
       left: 13.5%;
       position: relative;
       margin-left: 55px;
-  }
-  .main h2{
+}
+.main h2{
     font-size: 1.33333rem!important;
     font-weight: 700;
     margin: 0 0 22px;
 
-  }
+}
 
-  .col-md-2{
+.section-1{
+    margin-bottom: 2%;
+}
+.row div{
+    text-align: center;
+}
+.col-md-2{
       width: 12.5%;
       overflow: hidden;
-  }
+}
 
-  .desc a{
+.desc a{
       text-decoration: none;
       color: #000;
       text-align: center;
       font-size: 13px;
-  }
-  .song-name{
-      padding-left: 15px;
-  }
-  .desc a p{
+}
+
+.desc a p{
       color: #828da8;
       font-size: 13px;
-  }
+}
+img{
+    border-radius: 5%;
+}
 
-  .section-2{
+.top-charts p{
+    margin-bottom: 0px;
+}
+.section-2{
       padding-top: 20px;
-  }
+}
 
-  .top-charts{
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      grid-gap: 20px;    
-  }
+.item1 { grid-area: header; }
+.item2 { 
+    padding: 0 auto!important;
+    grid-area: menu; 
+    width: 85%;
+}
+.item3 { grid-area: main; 
+padding-top: 100px;}
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
 
+.top-charts{
+    width: 89.75%!important;
+    display: grid;
+    grid-template-areas:
+      'menu menu main right left top'
+      'menu menu footer footer1 footer2 bottom';
+    grid-gap: 0px;    
+    padding: 0px;
+    margin: 0 0 0 0px;
+    margin-bottom: 5%;
+}
+.top-charts div{
+  text-align: center;
+  padding: 0px;
+}
+.img-chart{
+    width: 70%;
+    margin: 0 auto;
+}
 
-  .top-charts box main{
-      width: 12.5%;
-      overflow: hidden;
-      grid-row-start: 1; 
-      grid-row-end: 2; 
-  }
+.img-chart desc a p{
+    margin: 0 0 0px;
+}
+/* .top-charts box main{
+        width: 12.5%;
+        overflow: hidden;
+        grid-row-start: 1; 
+        grid-row-end: 2; 
+}  */
+
+.main img:hover{
+    
+}
